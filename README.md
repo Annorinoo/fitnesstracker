@@ -118,7 +118,8 @@ Continuing to use Postman to test your API, you will encounter an error when try
 
 Solution: 
 
-```[In postman] 
+```
+[In postman] 
 GET http://localhost:3000/api/routines/38
 
 RESULT:
@@ -180,18 +181,18 @@ BODY:
 
 In this exercise, you will update a record using Postman. There should be no errors if your code is correct.
 
+```
 [In postman]
 POST http://localhost:3000/api/routines/38
 (Paste your Bearer Token in the Authorization tab)
-
+```
 
 ### Problem 6: DELETE one by ID
 
 Remove a record from the "rountine_activities" table. You will encounter an error. Fix this error.
 
-```
 Solution: 
-
+```
 Make sure the router.delete is correct 
 
 router.delete('/:routineId', requireUser, async (req, res, next) => {
